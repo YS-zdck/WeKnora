@@ -16,6 +16,10 @@ from docreader.parser.opendataloader_parser import (
     opendataloader_available,
 )
 from docreader.parser.pdf_parser import PDFParser
+from docreader.parser.pdf_inspector_parser import (
+    PDFInspectorParser,
+    pdf_inspector_available,
+)
 
 logger = logging.getLogger(__name__)
 
@@ -168,6 +172,14 @@ def _build_default_registry() -> ParserEngineRegistry:
             overrides, quick=True
         ),
         unavailable_hint="请安装 opendataloader-pdf 与 Java 11+",
+    )
+
+    reg.register(
+        "pdf_inspector",
+        {"pdf": PDFInspectorParser},
+        description="PDF Inspector（高性能 PDF 原生文本与结构提取）",
+        check_available=pdf_inspector_available,
+        unavailable_hint="请安装 pdf-inspector==0.2.6",
     )
 
     # NOTE: Engine listing is managed by Go-side engine registry

@@ -1313,6 +1313,10 @@ export default {
       fileTypeImage: '이미지',
       fileTypeAudiovisual: '오디오',
       engines: {
+        pdf_inspector: {
+          name: 'PDF Inspector',
+          desc: 'OCR 없이 PDF 원본 텍스트와 구조를 고성능으로 추출합니다'
+        },
         opendataloader: {
           name: 'OpenDataLoader',
           desc: 'OpenDataLoader PDF 파서 (레이아웃 분석, Java 11+ 및 opendataloader-pdf 필요)'

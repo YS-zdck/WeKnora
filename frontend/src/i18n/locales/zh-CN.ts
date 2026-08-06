@@ -1313,6 +1313,10 @@ export default {
       fileTypeImage: '图片',
       fileTypeAudiovisual: '音频',
       engines: {
+        pdf_inspector: {
+          name: 'PDF Inspector',
+          desc: '高性能 PDF 原生文本与结构提取，仅支持文本型 PDF，不包含 OCR'
+        },
         opendataloader: {
           name: 'OpenDataLoader',
           desc: 'OpenDataLoader PDF 解析引擎（版面分析，需 Java 11+ 与 opendataloader-pdf）'

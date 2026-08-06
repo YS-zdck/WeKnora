@@ -21,6 +21,7 @@ from .image_parser import ImageParser
 from .markdown_parser import MarkdownParser
 from .parser import Parser
 from .pdf_parser import PDFParser
+from .pdf_inspector_parser import PDFInspectorParser
 from .registry import ParserEngineRegistry, registry
 from .web_parser import WebParser
 
@@ -29,6 +30,7 @@ __all__ = [
     "Docx2Parser",
     "DocParser",
     "PDFParser",
+    "PDFInspectorParser",
     "MarkdownParser",
     "ImageParser",
     "WebParser",

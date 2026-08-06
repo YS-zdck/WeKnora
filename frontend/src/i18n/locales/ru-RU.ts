@@ -1313,6 +1313,10 @@ export default {
       fileTypeImage: 'Изображения',
       fileTypeAudiovisual: 'Аудио',
       engines: {
+        pdf_inspector: {
+          name: 'PDF Inspector',
+          desc: 'Высокопроизводительное извлечение текста и структуры PDF без OCR'
+        },
         opendataloader: {
           name: 'OpenDataLoader',
           desc: 'Парсер OpenDataLoader PDF (анализ вёрстки; требуются Java 11+ и opendataloader-pdf)'

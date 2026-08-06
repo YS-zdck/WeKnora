@@ -4559,6 +4559,10 @@ export default {
       fileTypeImage: 'Images',
       fileTypeAudiovisual: 'Audio',
       engines: {
+        pdf_inspector: {
+          name: 'PDF Inspector',
+          desc: 'High-performance native PDF text and structure extraction without OCR'
+        },
         builtin: {
           name: 'Built-in',
           desc: 'DocReader built-in parser engine (docx/pdf/xlsx and other complex formats)'
